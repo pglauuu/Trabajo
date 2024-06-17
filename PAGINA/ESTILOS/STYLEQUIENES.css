@@ -1,0 +1,385 @@
+/* Importar Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #2B3033;
+  font-family: Arial, sans-serif;
+}
+
+/* Variables */
+:root {
+  --primary-color: #218CC5;
+  --background-color: #34779b;
+  --dark-color: #019CF0;
+  --second-color: #385D70;
+  --third-color: #2E3E46;
+  --color: #2B3033;
+}
+
+/* Navegacion */
+/* Navegacion */
+.company-name{
+  margin-left: 40%;
+  width: 200px;
+}
+
+nav {
+  background-color: var(--background-color);
+  overflow: hidden;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--color);
+}
+
+.ingresar-button {
+  background-color: #34779B;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+.ingresar-button:hover{
+  background-color:#2B3033;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 0 5%;
+  position: relative;
+  left: -40px;
+  bottom: 5px; 
+}
+
+.logo,.company-name {
+  float: left;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+/* SEARCH */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#search {
+  border: 3px solid #34779B;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 5px;
+  width: 200px;
+  font-size: 14px;
+}
+
+#search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#microphone-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#search-button:hover{
+  color: #34779B;
+}
+
+#microphone-button:hover{
+  color: #34779B;
+}
+
+/* Main content */
+.corporativo img {
+  width: 100%;
+  height: auto;
+}
+
+.parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  color: white;
+}
+
+.sidebar {
+  background-color: #34779B;
+  padding: 20px;
+  text-align: center;
+}
+
+.servi {
+  letter-spacing: 5px;
+  font-size: x-large;
+}
+
+.container-cajas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.caja {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  font-size: 1.6rem; /* Aumentar el tamaño de la fuente */
+}
+
+.caja p {
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #34779B;
+  margin-top: 40px;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  justify-items: center;
+}
+
+.title-footer {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: none;
+}
+
+.contact-info,
+.information,
+.my-account,
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul,
+.products ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li,
+.products ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300px;
+}
+
+.information ul li a,
+.my-account ul li a,
+.products ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover,
+.products ul li a:hover {
+  color: #2B3033;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons span {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons span i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.face {
+  background-color: #3b5998;
+}
+
+.twit {
+  background-color: #00acee;
+}
+
+.yout {
+  background-color: #c4302b;
+}
+
+.pint {
+  background-color: #c8232c;
+}
+
+.inst {
+  background: linear-gradient(
+    #405de6,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #fcaf45
+  );
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #fff;
+}
+
+.copyright p {
+  font-weight: 100px;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .company-name {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .corporativo,
+  .parrafo,
+  .sidebar,
+  .container-cajas {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-cajas {
+    flex-direction: column;
+  }
+
+  .caja {
+    max-width: 100%;
+    flex: 1 1 100%;
+    font-size: 1.4rem; /* Ajustar tamaño de la fuente para resoluciones más pequeñas */
+  }
+
+  .menu-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 468px) {
+  html {
+    font-size: 42.5%;
+  }
+
+  .menu-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .caja {
+    font-size: 1.2rem; /* Ajustar tamaño de la fuente para resoluciones más pequeñas */
+  }
+
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+}
